@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    padding: 0 23px;
+    color:white;
+}
+
+
+
+@media only screen and (max-width:900px) {
+        header{
+            margin: auto;
+            padding: 0 5px;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            
+        }
+
+        nav .toggle , .user{
+            position: fixed;
+            height: 40px;
+            width: 40px;
+            background:linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(0,0,0,.1) 30%);
+            border-radius: 10px;
+            filter: blur(1px);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+        }
+        nav .toggle{
+            left:20px;
+            top: 30px;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        nav .toggle .four{
+            position: relative;
+            height: 7px;
+            width:7px;
+            background-color: white;
+            z-index: 999;
+            margin: 2px;
+            border-radius: 3px;
+            box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.);
+        }
+        nav .toggle .one{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        nav .toggle .two{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        nav .user{
+            right: 20px;
+            top: 30px;
+            justify-content: center;
+            flex-direction: column;
+        }
+        nav .user .first {
+            background-color: white;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+        }
+        nav .user .second{
+            background-color: white;
+            height: 10px;
+            width: 17px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        .container{
+            margin:auto;
+        }
+        .container h1{
+            font-weight: 700;
+            color: white;
+        }
+        .container .input{
+            display: flex;
+            width: 100%;
+            margin:35px 0;
+            height: 35px;
+            border-radius:7px;
+            background: white;
+        }
+        .container .input input{
+            outline: none;
+            border:none;
+            margin:0 10px;
+            background-color: white;
+        }
+
+        .container .item{
+            display: flex;
+            list-style: none;
+            overflow:hidden;
+            margin-bottom: 25px;
+        }
+        .container .item .links a{
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 600;
+            color:white;     
+        }
+
+        .container .item .links a:hover{
+            color:orangered;
+            transition: all .5s ease;
+        }
+
+        .container .item .links .active{
+            color: orangered;
+            
+        }
+        .container .slide{
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .container .cardColumn{
+            height: 250px;
+            display: flex;
+            
+        }
+        .container .cardColumn .card{
+            overflow:hidden;
+            margin-right: 20px;
+            height: 230px;
+            width: 150px;
+            background: transparent;
+            box-shadow: 0px 0px 30px -20px white inset;
+            border-radius: 25px;
+            display: flex;
+            padding: 25px 9.2px 0 9px;
+            flex-direction: column;
+        }
+        .container .cardColumn .card img{
+            margin-bottom:20px ;
+            animation: Spin infinite 10s linear;
+    
+        }
+        .container .cardColumn .card h4 {
+            color: white;
+            margin-left: 6px;
+            margin-bottom: 3.8px;
+            opacity: .9;
+        }
+        .container .cardColumn .card p{
+            color: white;
+            font-size:10px ;
+            margin-left: 7px;
+            opacity: .6;
+            margin-bottom: 20px;
+        }
+        .container .cardColumn .card h6{
+            color:white;
+            margin-left: 7px;
+
+        }
+        .container .cardColumn .card h4 span{
+            color: orangered;
+        }
+        .container .cardColumn .card .navCard{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container .cardColumn .card .navCard .button{
+            height: 20px;
+            width:30px;
+            background-color: orangered;
+            color: white;
+            margin:0px 9px 9px 0px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0px 0px 50px orangered,
+                        0px 0px 15px orangered,
+                        0px 0px 15px orangered;
+           
+        }
+        .container .chooseYour{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        @keyframes Spin{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .container .special{
+            margin-bottom: 20px;
+        }
+        .container .special h3{
+            color: white;
+            margin-bottom: 20px;
+        }
+        .container .cardRow{
+            overflow: hidden;
+            height: 130px;
+            width:100%;
+            background: orangered;
+            background: transparent;
+            box-shadow: 0px 0px 30px -20px white inset;
+            border-radius: 20px;
+            padding: 25px 23px 20px 5px;
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+        .container .cardRow img{
+            height: 95px;
+            width: 170px;
+            animation: TRan 5s linear infinite;
+        }
+        @keyframes TRan {
+            0%{
+                transform: translateY(-7px);
+            }
+            50%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-7px);
+            }
+        }
+        .container .cardRow .contCardRow h4{
+            color: white;
+            margin-bottom: 30px;
+        }
+        .container .cardRow .contCardRow .Pricebuy{
+            color:white ;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container .cardRow .contCardRow .Pricebuy span{
+            color: orangered;
+        }
+        .container .cardRow .contCardRow .Pricebuy .buy{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 21px;
+            width: 80px;
+            border-radius: 5px;
+            background: orangered;
+            box-shadow: 0px 0px 50px orangered,
+                        0px 0px 15px orangered,
+                        0px 0px 15px orangered;
+        }
+}
